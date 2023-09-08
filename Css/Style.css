@@ -619,6 +619,7 @@ body{
 
 .side-items{
   background: rgba(153, 153, 149 , 0.260);
+  position: relative;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   width: 50%;
@@ -638,15 +639,15 @@ body{
   font-weight: 600
 }
 
-.open::before{
-  content: "\002771";
+.fa-play{
   position: absolute;
-  right: 9rem;
   rotate: 90deg;
+  top: 13px;
+  left: 74px;
   transition: all 0.5s;
 }
 
-.rotate::before{
+.rotate{
   rotate: 270deg;
 }
 
@@ -912,6 +913,184 @@ body{
   text-align: center;
   --tw-text-opacity: 1;
   color: rgb(2 6 23 / var(--tw-text-opacity));
+}
+
+.footer {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacter {
+  margin-right: 0.75rem;
+  width: 33.333333%;
+}
+
+.contact-header {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.contact-form {
+  box-shadow: 0px 0px 10px 3px rgb(71, 71, 71) ,
+  inset 0px 0px 10px 0px gray;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.25rem;
+  padding: 1.25rem
+}
+
+.contacter-child{
+  outline: none;
+  background-color: rgba(83, 104, 120 , 0.5);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 22px;
+  font-weight: 900;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity))
+}
+
+.contact-btn {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.About {
+  box-shadow: 0px 0px 10px 3px rgb(71, 71, 71) ,
+  inset 0px 0px 10px 0px gray;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  margin-top: 0.5rem;
+  display: flex;
+  width: 33.333333%;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 0.25rem;
+  padding: 0.75rem
+}
+
+.about-list {
+  -webkit-text-decoration: solid underline  1px royalblue;
+          text-decoration: solid underline  1px royalblue;
+  text-align: center
+}
+
+.about-item {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.Store {
+  box-shadow: 0px 0px 10px 3px rgb(71, 71, 71) ,
+  inset 0px 0px 10px 0px gray;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  width: 20%;
+  border-radius: 0.25rem;
+  padding: 1.75rem;
+  text-align: center
+}
+
+.store-header {
+  text-shadow: 1px 4px royalblue;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 40px;
+  font-weight: 900
+}
+
+.infos {
+  font-weight: 900;
+}
+
+.infos-items {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  font-size: 15px;
+}
+
+.infos-items i {
+  margin-right: 0.5rem;
+}
+
+.accept-header {
+  text-shadow: 1px 4px royalblue;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 28px;
+  font-weight: 900
+}
+
+.money {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.credit {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.credit i {
+  margin-right: 0.5rem;
+}
+
+.socials {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 2rem;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  font-size: 22px;
+  font-weight: 200
+}
+
+.socials i{
+  transition: 0.5s;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  width: 50px;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity))
+}
+
+.socials i:hover{
+  box-shadow: 1px 1px 80px 80px rgb(109, 109, 109);
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(113 113 122 / var(--tw-text-opacity))
 }
 
 

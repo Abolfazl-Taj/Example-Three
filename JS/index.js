@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   ////////////////// Acardion Menu
-  let btn = document.querySelector(".open");
+  let btn = document.querySelector(".fa-play");
   let openmenu = document.querySelector(".open-menu");
   btn.addEventListener("click", () => {
     btn.classList.toggle("rotate");
@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(timer, 1000);
   function timer() {
     let time = document.querySelector(".clock");
-    let now = moment().format("YY/MM/DD dd  , HH:MM:SS");
-    time.innerHTML = `${now}`
+    let now = moment().format("YY/MM/DD  dd , HH:mm:ss");
+    time.innerHTML = now
   }
   /////////////////////////// clock
 });

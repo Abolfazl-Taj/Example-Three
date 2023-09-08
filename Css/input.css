@@ -59,6 +59,7 @@ body{
 }
 .side-items{
    background: rgba(153, 153, 149 , 0.260);
+   position: relative;
   @apply my-[0.5rem] w-1/2 p-1 rounded 
 }  
 .info{
@@ -69,14 +70,14 @@ body{
     border: 1px solid #808082;
   @apply text-[20px] text-center font-semibold
 }
-.open::before{
-   content: "\002771";
+.fa-play{
    position: absolute;
-   right: 9rem;
    rotate: 90deg;
+   top: 13px;
+   left: 74px;
    transition: all 0.5s;
   }
-.rotate::before{
+.rotate{
   rotate: 270deg;
 }
 .open-menu{
@@ -213,6 +214,92 @@ body{
 }
 .Sub-btn {
   @apply text-center w-1/2 ml-[25%]  mt-[3rem] mb-[1rem] bg-gray-400 p-3 rounded-full text-slate-950
+}
+
+.footer {
+  @apply my-[4rem] flex mx-[20px] justify-between items-center
+}
+.contacter {
+ @apply w-1/3 mr-[0.75rem]
+
+}
+.contact-header {
+  @apply text-center text-[35px] font-semibold 
+}
+.contact-form {
+  box-shadow: 0px 0px 10px 3px rgb(71, 71, 71) ,
+  inset 0px 0px 10px 0px gray;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  @apply flex flex-wrap p-5 mt-[0.5rem] rounded
+}
+.contacter-child{
+  outline: none;
+  background-color: rgba(83, 104, 120 , 0.5);
+ @apply w-full my-[0.5rem] rounded h-[2.5rem] text-gray-400 text-[22px] font-black p-2
+}
+
+.contact-btn {
+ @apply bg-slate-900 font-bold text-[30px] p-3 rounded w-full my-3
+}
+.About {
+  box-shadow: 0px 0px 10px 3px rgb(71, 71, 71) ,
+  inset 0px 0px 10px 0px gray;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  @apply flex flex-wrap  mt-[0.5rem] rounded w-1/3 justify-center p-3
+}
+
+.about-list {
+  text-decoration: solid underline  1px royalblue; 
+  @apply text-center  
+}
+.about-item {
+  @apply font-bold text-center text-[25px]
+}
+.Store {
+  box-shadow: 0px 0px 10px 3px rgb(71, 71, 71) ,
+  inset 0px 0px 10px 0px gray;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  @apply w-1/5 text-center p-7 rounded
+}
+.store-header {
+  text-shadow: 1px 4px royalblue;
+  @apply my-[0.75rem] font-black text-[40px]
+}
+.infos{
+  @apply font-black
+}
+
+.infos-items {
+   @apply text-[15px] my-2 flex
+}
+.infos-items i{
+  @apply mr-[0.5rem]
+}
+.accept-header {
+  text-shadow: 1px 4px royalblue;
+  @apply my-[0.75rem] font-black text-[28px]
+}
+.money {
+  @apply text-[18px] my-2 font-black
+}
+.credit {
+  @apply text-left my-[0.5rem] flex items-center
+}
+.credit i{
+ @apply mr-[0.5rem]
+}
+.socials {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  @apply mt-[2rem] rounded p-3 font-extralight text-[22px] 
+}
+.socials i{
+   transition: 0.5s;
+   @apply bg-slate-700 text-slate-500 mx-1 text-center w-[50px]  my-1 p-3 rounded
+}
+.socials i:hover{
+  box-shadow: 1px 1px 80px 80px rgb(109, 109, 109);
+  @apply bg-blue-700 text-zinc-500
 }
 
 
