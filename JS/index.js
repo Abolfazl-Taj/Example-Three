@@ -22,4 +22,31 @@ document.addEventListener("DOMContentLoaded", () => {
     time.innerHTML = now
   }
   /////////////////////////// clock
+////////////////////////////////////////////Subscribe////////////////////////////////////////////
+// Can also be included with a regular script tag
+var typed = new Typed('.Sub-header', {
+  strings: ["Subscribe Now", "50% Off For Your First Time" , "Only Today"],
+  typeSpeed: 30,
+  backSpeed: 20,
+  loop: true,
+  fadeOut: true,
+  showCursor: false,
+});
+////////////////////////////////////////////Subscribe////////////////////////////////////////////
+
+////////////////////////////////////////////INPUT////////////////////////////////////////////
+
+  var typed2 = new Typed('.inputes', {
+    strings: ['Wanna Subscribe ?' , 'Write Your Email' ],
+    typeSpeed: 40,
+    backSpeed: 80,
+    attr: 'placeholder',
+    bindInputFocusEvents: false,
+    loop: true,
+    fadeOut: true,
+  });
+////////////////////////////////////////////INPUT////////////////////////////////////////////
+    
+
+
 });

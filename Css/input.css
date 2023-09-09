@@ -198,7 +198,7 @@ body{
 }
 .Sub-header {
   text-shadow: 1px 1px white;
-  @apply font-semibold text-[40px]  text-slate-700 p-4 mx-[1rem]
+  @apply font-semibold text-[30px]  text-slate-700 p-5 mx-[1rem] 
 }
 .sub-p {
   line-height: 4rem;
@@ -301,8 +301,9 @@ body{
   box-shadow: 1px 1px 80px 80px rgb(109, 109, 109);
   @apply bg-blue-700 text-zinc-500
 }
-
-
+:root{
+  scroll-behavior: smooth;
+ }
 
 
 

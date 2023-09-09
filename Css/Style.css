@@ -867,8 +867,8 @@ body{
   text-shadow: 1px 1px white;
   margin-left: 1rem;
   margin-right: 1rem;
-  padding: 1rem;
-  font-size: 40px;
+  padding: 1.25rem;
+  font-size: 30px;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity))
@@ -1093,7 +1093,9 @@ body{
   color: rgb(113 113 122 / var(--tw-text-opacity))
 }
 
-
+:root{
+  scroll-behavior: smooth;
+}
 
 
 
